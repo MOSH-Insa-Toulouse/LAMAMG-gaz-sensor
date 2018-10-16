@@ -5,7 +5,7 @@
 SoftwareSerial loraSerial(8,9);
 #define debugSerial Serial
 
-float sensor_volt;
+float sensor_volt = 0;
 int LED = 13;
 volatile byte state = LOW;
 LiquidCrystal monEcran(12,11,7,6,5,4); // on crée l'objet écran
@@ -47,12 +47,19 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  //sensor_volt = analogRead(A0)/1024.0*5.0;
+  sensor_volt = analogRead(A0)/1024.0*5.0;
   //digitalWrite(LED, state);
-  //monEcran.setCursor(0, 1);
-  //monEcran.print(sensor_volt);
-  ttn.poll();
-  delay(1000);
+  monEcran.setCursor(0, 1);
+  monEcran.print(sensor_volt);
+  //ttn.poll();
+   
+  byte payload[2];
+  payload[0] = (digitalRead(2) == HIGH) ? 1 : 0;
+  payload[1] = 100*sensor_volt;
+
+  // Send it off
+  ttn.sendBytes(payload, sizeof(payload));
+  delay(5000);
 }
 
 void onButtonInterrupt()
