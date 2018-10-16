@@ -1,4 +1,104 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Shield_LORA:RN2483A U?
+U 1 1 5BC6134E
+P 4500 1250
+F 0 "U?" H 4928 1240 50  0000 L CNN
+F 1 "RN2483A" H 4928 1149 50  0000 L CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "" H 4550 1400 50  0001 C CNN
+	1    4500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Shield_LORA:LCD_screen U?
+U 1 1 5BC6144D
+P 4550 1900
+F 0 "U?" H 5478 1865 50  0000 L CNN
+F 1 "LCD_screen" H 5478 1774 50  0000 L CNN
+F 2 "" H 4550 1900 50  0001 C CNN
+F 3 "" H 4550 1900 50  0001 C CNN
+	1    4550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5BC6155E
+P 7900 2650
+F 0 "J?" H 7927 2626 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 7927 2535 50  0000 L CNN
+F 2 "" H 7900 2650 50  0001 C CNN
+F 3 "~" H 7900 2650 50  0001 C CNN
+	1    7900 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Shield_LORA:gaz_sensor U?
+U 1 1 5BC61797
+P 8300 4350
+F 0 "U?" H 8678 4265 50  0000 L CNN
+F 1 "gaz_sensor" H 8678 4174 50  0000 L CNN
+F 2 "" H 8300 4350 50  0001 C CNN
+F 3 "" H 8300 4350 50  0001 C CNN
+	1    8300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J?
+U 1 1 5BC61812
+P 1400 3700
+F 0 "J?" H 1506 4078 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 1506 3987 50  0000 C CNN
+F 2 "" H 1400 3700 50  0001 C CNN
+F 3 "~" H 1400 3700 50  0001 C CNN
+	1    1400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5BC61878
+P 1350 4900
+F 0 "J?" H 1456 5378 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 1456 5287 50  0000 C CNN
+F 2 "" H 1350 4900 50  0001 C CNN
+F 3 "~" H 1350 4900 50  0001 C CNN
+	1    1350 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J?
+U 1 1 5BC618D4
+P 1350 6050
+F 0 "J?" H 1456 6528 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 1456 6437 50  0000 C CNN
+F 2 "" H 1350 6050 50  0001 C CNN
+F 3 "~" H 1350 6050 50  0001 C CNN
+	1    1350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J?
+U 1 1 5BC6191E
+P 1350 7100
+F 0 "J?" H 1456 7678 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 1456 7587 50  0000 C CNN
+F 2 "" H 1350 7100 50  0001 C CNN
+F 3 "~" H 1350 7100 50  0001 C CNN
+	1    1350 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

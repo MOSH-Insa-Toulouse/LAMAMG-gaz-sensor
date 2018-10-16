@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name RN2483A)(type Legacy)(uri D:/Users/grac/Desktop/LAMAMG-gaz-sensor/Kicad/shield/RN2483A.lib)(options "")(descr ""))
+  (lib (name Shield_LORA)(type Legacy)(uri D:/Users/grac/Desktop/LAMAMG-gaz-sensor/Kicad/shield/Shield_LORA.lib)(options "")(descr ""))
+)
