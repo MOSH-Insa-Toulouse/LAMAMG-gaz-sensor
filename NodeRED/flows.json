@@ -1,0 +1,219 @@
+[
+    {
+        "id": "9fbcf9b9.921008",
+        "type": "tab",
+        "label": "Dashboooooard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "38deb9d1.ac5f1e",
+        "type": "ttn uplink",
+        "z": "9fbcf9b9.921008",
+        "name": "gaz_sensor",
+        "app": "be041506.ce9ef",
+        "dev_id": "",
+        "field": "",
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "ed532a6.23aa4d8",
+                "b3091343.8d33a8",
+                "a3cbb738.10eab8"
+            ]
+        ]
+    },
+    {
+        "id": "ed532a6.23aa4d8",
+        "type": "debug",
+        "z": "9fbcf9b9.921008",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 590,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "e742f284.bcf47",
+        "type": "ui_gauge",
+        "z": "9fbcf9b9.921008",
+        "name": "",
+        "group": "c1fa9c5a.f01b2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Etat du bouton",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1",
+        "colors": [
+            "#00B500",
+            "#E6E600",
+            "#CA3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 620,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "b3091343.8d33a8",
+        "type": "function",
+        "z": "9fbcf9b9.921008",
+        "name": "",
+        "func": "return {payload : msg.payload['0']};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "3dae1e87.d9621a",
+                "e742f284.bcf47"
+            ]
+        ]
+    },
+    {
+        "id": "3dae1e87.d9621a",
+        "type": "debug",
+        "z": "9fbcf9b9.921008",
+        "name": "debug_fn",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 600,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e88cb314.9b121",
+        "type": "ui_gauge",
+        "z": "9fbcf9b9.921008",
+        "name": "",
+        "group": "c1fa9c5a.f01b2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Valeur retournée par le capteur",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "5",
+        "colors": [
+            "#00B500",
+            "#E6E600",
+            "#CA3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 670,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a3cbb738.10eab8",
+        "type": "function",
+        "z": "9fbcf9b9.921008",
+        "name": "",
+        "func": "return {payload : msg.payload['1']/100};",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "e88cb314.9b121",
+                "6e4d3a71.e8bebc"
+            ]
+        ]
+    },
+    {
+        "id": "6e4d3a71.e8bebc",
+        "type": "ui_chart",
+        "z": "9fbcf9b9.921008",
+        "name": "",
+        "group": "5016beb5.554118",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Charteeeeeuuh",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "NO DATA",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1F77B4",
+            "#AEC7E8",
+            "#FF7F0E",
+            "#2CA02C",
+            "#98DF8A",
+            "#D62728",
+            "#FF9896",
+            "#9467BD",
+            "#C5B0D5"
+        ],
+        "useOldStyle": false,
+        "x": 620,
+        "y": 220,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "be041506.ce9ef",
+        "type": "ttn app",
+        "z": "",
+        "appId": "ttn_mosh_test",
+        "accessKey": "ttn-account-v2.OzxuDS1jRKhWG6ITqwY0lxyaSmZtWXTKwuyrEZcB6FY",
+        "discovery": "discovery.thethingsnetwork.org:1900"
+    },
+    {
+        "id": "c1fa9c5a.f01b2",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "f97d6bc.5cad118",
+        "disp": false,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "5016beb5.554118",
+        "type": "ui_group",
+        "z": "",
+        "name": "Chart",
+        "tab": "f97d6bc.5cad118",
+        "order": 2,
+        "disp": false,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "f97d6bc.5cad118",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Gas Sensor",
+        "icon": "dashboard"
+    }
+]
