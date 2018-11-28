@@ -7,9 +7,28 @@
 [![Node-Red-TTN Version][node-red-ttn-image]][node-red-ttn-url]
 [![Arduino-TTN Version][arduino-ttn-image]][arduino-ttn-url]
 
-One to two paragraph statement about your product and what it does.
+
+The result of our project can be seen on the following picture, which is a screenshot of our application's dashboard.
 
 ![](screenshot.png)
+
+Our application is simple:
+- we collect data through a gaz sensor connected to an Arduino board
+- then, we send it to a NodeRed serving using TTN and LoRa
+- once the data is received by the server, the dashboard is updated
+- the values are displayed separately (two gauges for the sensor & the button state values, one chart for the evolution of the sensor value)
+
+As of now, the button is purely decorative (it once served to send data when at '1').   
+
+![](screenshot_kicad.png)
+
+We designed our own Arduino shield using the KiCad software. It directly connects to the Arduino board used (101). 
+On it, you can add the following devices:
+- a Grove LCD screen (http://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight)
+- a potentiometer
+- a Grove gaz sensor (http://wiki.seeedstudio.com/Grove-Gas_Sensor)
+- our homemade gaz sensor (with an integrated AOP)
+- the RN2483 LoRa transceiver module and its board (https://www.microchip.com/wwwproducts/en/RN2483) 
 
 ## Installation
 
@@ -62,11 +81,13 @@ downloaded [here](https://www.arduino.cc/en/Main/Software). You may need
 to fix the dependencies you'll find in the Dependencies' section.
 You can easily find them into the package manager of the IDE.
 
-## Team
-
-- Maxime Grac – grac@etud.insa-toulouse.fr
-- Lucas Audibert – l_audibe@etud.insa-toulouse.fr
-- Adrien Marty – a_marty@etud.insa-toulouse.fr
+## Contributors
+ 
+ | Name           | Contact                        |
+ |----------------|--------------------------------|
+ | Maxime Grac    | grac@etud.insa-toulouse.fr     |
+ | Lucas Audibert | l_audibe@etud.insa-toulouse.fr |
+ | Adrien Marty   | a_marty@etud.insa-toulouse.fr  |
 
 Distributed under the MIT license. See ``LICENSE`` for more information.
 
@@ -87,4 +108,3 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 [node-red-ttn-url]: https://www.npmjs.com/package/node-red-contrib-ttn
 [arduino-ttn-image]: https://img.shields.io/badge/TTN_Arduino-v2.5.13-orange.svg
 [arduino-ttn-url]: https://github.com/TheThingsNetwork/arduino-device-lib
-# LAMAMG-gaz-sensor
