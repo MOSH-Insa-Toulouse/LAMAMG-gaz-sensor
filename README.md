@@ -20,7 +20,7 @@ Our application is simple:
 
 As of now, the button is purely decorative (it once served to send data when at '1').   
 
-![](screenshot_kicad.png)
+![](screenshot_kicadv2.png)
 
 We designed our own Arduino shield using the KiCad software. It directly connects to the Arduino board used (101). 
 On it, you can add the following devices:
