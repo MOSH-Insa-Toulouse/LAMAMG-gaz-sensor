@@ -465,7 +465,6 @@ NoConn ~ 10700 3200
 NoConn ~ 10700 3300
 NoConn ~ 10700 3100
 NoConn ~ 10700 3000
-NoConn ~ 9200 2850
 NoConn ~ 9200 2950
 NoConn ~ 9200 3050
 NoConn ~ 9200 3150
@@ -478,4 +477,224 @@ NoConn ~ 9150 2000
 NoConn ~ 9150 2500
 Wire Wire Line
 	10700 1650 10450 1650
+$Comp
+L Shield_LTC:LT1050 U4
+U 1 1 5BD73D87
+P 7600 4400
+F 0 "U4" H 9391 3921 50  0000 L CNN
+F 1 "LT1050" H 9391 3830 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7600 4400 50  0001 C CNN
+F 3 "" H 7600 4400 50  0001 C CNN
+	1    7600 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BD73E13
+P 7350 5500
+F 0 "R3" H 7420 5546 50  0000 L CNN
+F 1 "R" H 7420 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7280 5500 50  0001 C CNN
+F 3 "~" H 7350 5500 50  0001 C CNN
+	1    7350 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BD73EB9
+P 7750 5500
+F 0 "R4" H 7820 5546 50  0000 L CNN
+F 1 "R" H 7820 5455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7680 5500 50  0001 C CNN
+F 3 "~" H 7750 5500 50  0001 C CNN
+	1    7750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BD73EE9
+P 6700 5100
+F 0 "R2" V 6493 5100 50  0000 C CNN
+F 1 "R" V 6584 5100 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6630 5100 50  0001 C CNN
+F 3 "~" H 6700 5100 50  0001 C CNN
+	1    6700 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BD77BC7
+P 7100 5500
+F 0 "C1" H 7215 5546 50  0000 L CNN
+F 1 "C" H 7215 5455 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7138 5350 50  0001 C CNN
+F 3 "~" H 7100 5500 50  0001 C CNN
+	1    7100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5BD77C11
+P 10600 5150
+F 0 "C4" H 10715 5196 50  0000 L CNN
+F 1 "C" H 10715 5105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10638 5000 50  0001 C CNN
+F 3 "~" H 10600 5150 50  0001 C CNN
+	1    10600 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5BD77C9D
+P 9800 4600
+F 0 "C3" H 9915 4646 50  0000 L CNN
+F 1 "C" H 9915 4555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm" H 9838 4450 50  0001 C CNN
+F 3 "~" H 9800 4600 50  0001 C CNN
+	1    9800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 5100 7100 5100
+Wire Wire Line
+	7100 5350 7100 5100
+Connection ~ 7100 5100
+Wire Wire Line
+	7100 5100 7350 5100
+Wire Wire Line
+	7350 5350 7350 5100
+Wire Wire Line
+	7100 5650 7250 5650
+Wire Wire Line
+	7250 5650 7250 5750
+Connection ~ 7250 5650
+Wire Wire Line
+	7250 5650 7350 5650
+Text Label 7250 5750 0    50   ~ 0
+GND
+Wire Wire Line
+	8400 5300 8400 5350
+Text Label 8800 5200 0    50   ~ 0
+GND
+Text Label 8400 5350 0    50   ~ 0
+GND
+Wire Wire Line
+	8800 5150 8800 5200
+Wire Wire Line
+	7750 5650 7750 5750
+Text Label 7750 5750 0    50   ~ 0
+GND
+$Comp
+L Device:R R5
+U 1 1 5BD96DAB
+P 10100 4600
+F 0 "R5" H 10170 4646 50  0000 L CNN
+F 1 "R" H 10170 4555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10030 4600 50  0001 C CNN
+F 3 "~" H 10100 4600 50  0001 C CNN
+	1    10100 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 4900 9800 4900
+Wire Wire Line
+	10100 4900 10100 4750
+Wire Wire Line
+	9800 4750 9800 4900
+Connection ~ 9800 4900
+Wire Wire Line
+	9800 4900 10100 4900
+Connection ~ 9800 4450
+$Comp
+L Device:R R6
+U 1 1 5BDAFB51
+P 10300 4900
+F 0 "R6" V 10093 4900 50  0000 C CNN
+F 1 "R" V 10184 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10230 4900 50  0001 C CNN
+F 3 "~" H 10300 4900 50  0001 C CNN
+	1    10300 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 4900 10100 4900
+Connection ~ 10100 4900
+Wire Wire Line
+	10450 4900 10600 4900
+Wire Wire Line
+	10600 4900 10600 5000
+Wire Wire Line
+	10600 5350 10600 5300
+Text Label 10600 5350 0    50   ~ 0
+GND
+Wire Wire Line
+	9800 4450 7750 4450
+Wire Wire Line
+	8000 5100 7350 5100
+Wire Wire Line
+	9800 4450 10100 4450
+Connection ~ 7350 5100
+Wire Wire Line
+	7750 4450 7750 4750
+Wire Wire Line
+	8000 4750 7750 4750
+Connection ~ 7750 4750
+Wire Wire Line
+	7750 4750 7750 5350
+Wire Wire Line
+	8400 3850 8400 3750
+Wire Wire Line
+	8650 3850 8400 3850
+Wire Wire Line
+	8650 3950 8650 3850
+Wire Wire Line
+	8650 4250 8650 4300
+Text Label 8650 4300 0    50   ~ 0
+GND
+Text Label 8400 3750 0    50   ~ 0
++5V
+$Comp
+L Device:C C2
+U 1 1 5BD77CFB
+P 8650 4100
+F 0 "C2" H 8765 4146 50  0000 L CNN
+F 1 "C" H 8765 4055 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 8688 3950 50  0001 C CNN
+F 3 "~" H 8650 4100 50  0001 C CNN
+	1    8650 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 4550 8400 3850
+Connection ~ 8400 3850
+Wire Wire Line
+	10600 4900 10800 4900
+Connection ~ 10600 4900
+Text Label 10800 4900 0    50   ~ 0
+A1
+Text Label 6400 5100 0    50   ~ 0
+Isens
+Wire Wire Line
+	6400 5100 6550 5100
+$Comp
+L Capteur:Gaz_Sensor U5
+U 1 1 5BDEB1A5
+P 4550 5900
+F 0 "U5" H 4941 5946 50  0000 L CNN
+F 1 "Gaz_Sensor" H 4941 5855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-5-4" H 4550 5900 50  0001 C CNN
+F 3 "" H 4550 5900 50  0001 C CNN
+	1    4550 5900
+	1    0    0    -1  
+$EndComp
+Text Label 4550 5450 0    50   ~ 0
++3V3
+Text Label 4550 6350 0    50   ~ 0
+Isens
+NoConn ~ 4900 5900
+NoConn ~ 4200 5900
+Wire Wire Line
+	4550 6250 4550 6350
+Wire Wire Line
+	4550 5450 4550 5550
 $EndSCHEMATC

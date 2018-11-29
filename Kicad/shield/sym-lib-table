@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name RN2483A)(type Legacy)(uri D:/Users/grac/Desktop/LAMAMG-gaz-sensor/Kicad/shield/RN2483A.lib)(options "")(descr ""))
-  (lib (name Shield_LORA)(type Legacy)(uri D:/Users/grac/Desktop/LAMAMG-gaz-sensor/Kicad/shield/Shield_LORA.lib)(options "")(descr ""))
-  (lib (name Arduino_As_Uno-cache)(type Legacy)(uri U:/Windows/Bureau/MOSH/Arduino_As_Uno_R3/Arduino_As_Uno-cache.lib)(options "")(descr ""))
+  (lib (name Shield_LTC)(type Legacy)(uri U:/Windows/Bureau/MOSH/LAMAMG-gaz-sensor/Kicad/shield/Shield_LTC.lib)(options "")(descr ""))
+  (lib (name Capteur)(type Legacy)(uri U:/Windows/Bureau/MOSH/LAMAMG-gaz-sensor/Kicad/shield/Capteur.lib)(options "")(descr ""))
 )
