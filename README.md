@@ -25,7 +25,6 @@ As of now, the button is purely decorative (it once served to send data when at 
 We designed our own Arduino shield using the KiCad software. It directly connects to the Arduino board used (101). 
 On it, you can add the following devices:
 - a Grove LCD screen (http://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight)
-- a potentiometer
 - a Grove gaz sensor (http://wiki.seeedstudio.com/Grove-Gas_Sensor)
 - our homemade gaz sensor (with an integrated AOP)
 - the RN2483 LoRa transceiver module and its board (https://www.microchip.com/wwwproducts/en/RN2483) 
