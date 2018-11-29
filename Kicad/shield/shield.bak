@@ -20,7 +20,7 @@ U 1 1 5BC6134E
 P 1200 1650
 F 0 "U3" H 1628 1640 50  0000 L CNN
 F 1 "RN2483A" H 1628 1549 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1250 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical" H 1250 1800 50  0001 C CNN
 F 3 "" H 1250 1800 50  0001 C CNN
 	1    1200 1650
 	0    -1   -1   0   
@@ -31,7 +31,7 @@ U 1 1 5BC6144D
 P 1150 3750
 F 0 "U2" H 2078 3715 50  0000 L CNN
 F 1 "LCD_screen" H 2078 3624 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 1150 3750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 1150 3750 50  0001 C CNN
 F 3 "" H 1150 3750 50  0001 C CNN
 	1    1150 3750
 	0    -1   -1   0   
@@ -42,7 +42,7 @@ U 1 1 5BC61797
 P 1050 5500
 F 0 "U1" H 1428 5415 50  0000 L CNN
 F 1 "gaz_sensor" H 1428 5324 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 1050 5500 50  0001 C CNN
+F 2 "Connector:NS-Tech_Grove_1x04_P2mm_Vertical" H 1050 5500 50  0001 C CNN
 F 3 "" H 1050 5500 50  0001 C CNN
 	1    1050 5500
 	0    -1   -1   0   
@@ -346,11 +346,11 @@ Wire Wire Line
 Wire Wire Line
 	1750 4450 1550 4450
 Text Label 1750 4150 0    50   ~ 0
-D12
+#D9
 Wire Wire Line
 	1750 4150 1550 4150
 Text Label 1750 3950 0    50   ~ 0
-#D11
+D8
 Text Label 1750 4050 0    50   ~ 0
 GND
 Wire Wire Line
@@ -379,7 +379,7 @@ U 1 1 5BCA99BE
 P 2050 2900
 F 0 "R1" H 2120 2946 50  0000 L CNN
 F 1 "R" H 2120 2855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 1980 2900 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1980 2900 50  0001 C CNN
 F 3 "~" H 2050 2900 50  0001 C CNN
 	1    2050 2900
 	1    0    0    -1  
@@ -409,7 +409,7 @@ U 1 1 5BCAE352
 P 2100 4250
 F 0 "RV1" H 2030 4204 50  0000 R CNN
 F 1 "R_POT" H 2030 4295 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_ACP_CA6-VSMD_Vertical" H 2100 4250 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_ACP_CA14V-15_Vertical" H 2100 4250 50  0001 C CNN
 F 3 "~" H 2100 4250 50  0001 C CNN
 	1    2100 4250
 	-1   0    0    1   
@@ -443,9 +443,9 @@ Wire Wire Line
 Wire Wire Line
 	2100 4400 2100 4500
 Text Label 1700 2000 0    50   ~ 0
-D8
+D12
 Text Label 1700 1900 0    50   ~ 0
-#D9
+#D11
 Wire Wire Line
 	1700 2000 1500 2000
 Wire Wire Line
@@ -465,7 +465,6 @@ NoConn ~ 10700 3200
 NoConn ~ 10700 3300
 NoConn ~ 10700 3100
 NoConn ~ 10700 3000
-NoConn ~ 9200 2850
 NoConn ~ 9200 2950
 NoConn ~ 9200 3050
 NoConn ~ 9200 3150
@@ -478,4 +477,201 @@ NoConn ~ 9150 2000
 NoConn ~ 9150 2500
 Wire Wire Line
 	10700 1650 10450 1650
+$Comp
+L Shield_LTC:LT1050 U4
+U 1 1 5BD73D87
+P 7500 4350
+F 0 "U4" H 9291 3871 50  0000 L CNN
+F 1 "LT1050" H 9291 3780 50  0000 L CNN
+F 2 "" H 7500 4350 50  0001 C CNN
+F 3 "" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5BD73E13
+P 7250 5450
+F 0 "R3" H 7320 5496 50  0000 L CNN
+F 1 "R" H 7320 5405 50  0000 L CNN
+F 2 "" V 7180 5450 50  0001 C CNN
+F 3 "~" H 7250 5450 50  0001 C CNN
+	1    7250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5BD73EB9
+P 7650 5450
+F 0 "R4" H 7720 5496 50  0000 L CNN
+F 1 "R" H 7720 5405 50  0000 L CNN
+F 2 "" V 7580 5450 50  0001 C CNN
+F 3 "~" H 7650 5450 50  0001 C CNN
+	1    7650 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5BD73EE9
+P 6600 5050
+F 0 "R2" V 6393 5050 50  0000 C CNN
+F 1 "R" V 6484 5050 50  0000 C CNN
+F 2 "" V 6530 5050 50  0001 C CNN
+F 3 "~" H 6600 5050 50  0001 C CNN
+	1    6600 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5BD77BC7
+P 7000 5450
+F 0 "C1" H 7115 5496 50  0000 L CNN
+F 1 "C" H 7115 5405 50  0000 L CNN
+F 2 "" H 7038 5300 50  0001 C CNN
+F 3 "~" H 7000 5450 50  0001 C CNN
+	1    7000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5BD77C11
+P 10500 5100
+F 0 "C4" H 10615 5146 50  0000 L CNN
+F 1 "C" H 10615 5055 50  0000 L CNN
+F 2 "" H 10538 4950 50  0001 C CNN
+F 3 "~" H 10500 5100 50  0001 C CNN
+	1    10500 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5BD77C9D
+P 9700 4550
+F 0 "C3" H 9815 4596 50  0000 L CNN
+F 1 "C" H 9815 4505 50  0000 L CNN
+F 2 "" H 9738 4400 50  0001 C CNN
+F 3 "~" H 9700 4550 50  0001 C CNN
+	1    9700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5050 7000 5050
+Wire Wire Line
+	7000 5300 7000 5050
+Connection ~ 7000 5050
+Wire Wire Line
+	7000 5050 7250 5050
+Wire Wire Line
+	7250 5300 7250 5050
+Wire Wire Line
+	6450 5050 6400 5050
+Wire Wire Line
+	7000 5600 7150 5600
+Wire Wire Line
+	7150 5600 7150 5700
+Connection ~ 7150 5600
+Wire Wire Line
+	7150 5600 7250 5600
+Text Label 7150 5700 0    50   ~ 0
+GND
+Wire Wire Line
+	8300 5250 8300 5300
+Text Label 8700 5150 0    50   ~ 0
+GND
+Text Label 8300 5300 0    50   ~ 0
+GND
+Wire Wire Line
+	8700 5100 8700 5150
+Wire Wire Line
+	7650 5600 7650 5700
+Text Label 7650 5700 0    50   ~ 0
+GND
+$Comp
+L Device:R R5
+U 1 1 5BD96DAB
+P 10000 4550
+F 0 "R5" H 10070 4596 50  0000 L CNN
+F 1 "R" H 10070 4505 50  0000 L CNN
+F 2 "" V 9930 4550 50  0001 C CNN
+F 3 "~" H 10000 4550 50  0001 C CNN
+	1    10000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 4850 9700 4850
+Wire Wire Line
+	10000 4850 10000 4700
+Wire Wire Line
+	9700 4700 9700 4850
+Connection ~ 9700 4850
+Wire Wire Line
+	9700 4850 10000 4850
+Connection ~ 9700 4400
+$Comp
+L Device:R R6
+U 1 1 5BDAFB51
+P 10200 4850
+F 0 "R6" V 9993 4850 50  0000 C CNN
+F 1 "R" V 10084 4850 50  0000 C CNN
+F 2 "" V 10130 4850 50  0001 C CNN
+F 3 "~" H 10200 4850 50  0001 C CNN
+	1    10200 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10050 4850 10000 4850
+Connection ~ 10000 4850
+Wire Wire Line
+	10350 4850 10500 4850
+Wire Wire Line
+	10500 4850 10500 4950
+Wire Wire Line
+	10500 5300 10500 5250
+Text Label 10500 5300 0    50   ~ 0
+GND
+Wire Wire Line
+	9700 4400 7650 4400
+Wire Wire Line
+	7900 5050 7250 5050
+Wire Wire Line
+	9700 4400 10000 4400
+Connection ~ 7250 5050
+Wire Wire Line
+	7650 4400 7650 4700
+Wire Wire Line
+	7900 4700 7650 4700
+Connection ~ 7650 4700
+Wire Wire Line
+	7650 4700 7650 5300
+Wire Wire Line
+	8300 3800 8300 3700
+Wire Wire Line
+	8550 3800 8300 3800
+Wire Wire Line
+	8550 3900 8550 3800
+Wire Wire Line
+	8550 4200 8550 4250
+Text Label 8550 4250 0    50   ~ 0
+GND
+Text Label 8300 3700 0    50   ~ 0
++5V
+$Comp
+L Device:C C2
+U 1 1 5BD77CFB
+P 8550 4050
+F 0 "C2" H 8665 4096 50  0000 L CNN
+F 1 "C" H 8665 4005 50  0000 L CNN
+F 2 "" H 8588 3900 50  0001 C CNN
+F 3 "~" H 8550 4050 50  0001 C CNN
+	1    8550 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4500 8300 3800
+Connection ~ 8300 3800
+Wire Wire Line
+	10500 4850 10700 4850
+Connection ~ 10500 4850
+Text Label 10700 4850 0    50   ~ 0
+A1
 $EndSCHEMATC
